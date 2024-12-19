@@ -1,0 +1,5 @@
+FROM python:3.8-slim
+COPY metrics_scraper.py /metrics_scraper.py
+RUN pip install psutil flask
+CMD ["python", "/metrics_scraper.py"]
+
